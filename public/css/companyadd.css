@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+.btn-primary{
+    width: 100%;
+    font-size: 20px;
+}
+

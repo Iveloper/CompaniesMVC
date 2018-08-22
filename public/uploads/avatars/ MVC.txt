@@ -1,0 +1,6 @@
+Model - griji se za bazata danni vzima,zapisva,redaktira informaciqta v bazite otgovarq za
+post, get metodite ot html formite, griji se za validiraneto na dannite
+
+View - vizualizira dannite (HTML)
+
+Controller - vzima dannite ot model-a razpredelq gi i gi prashta na view-to 
