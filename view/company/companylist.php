@@ -43,7 +43,7 @@
             <td><?php echo $company['bulstat']; ?></td>
             <td><a href="/companyrecord?id=<?php echo $company['id'] ?>"><button type="submit" class="btn btn-info">Info</button></a></td>
             <td><a href="/companyedit?id=<?php echo $company['id'] ?>"><button type="submit" class="btn btn-warning">Edit</button></a></td>
-            <td><button type="submit" onclick="deleteCompany()" class="btn btn-danger"><a href="/companydelete?id=<?php echo $company['id'] ?>">Delete</a></button></td>
+            <td><button type="submit" onclick="deleteCompany(event)" class="btn btn-danger"><a href="/companydelete?id=<?php echo $company['id'] ?>">Delete</a></button></td>
         </tr>
     <?php } ?>
 </tbody>

@@ -29,7 +29,7 @@ class Auth {
     }
 
     public static function getUserAvatar() {
-        return $_SESSION['user']['avatar'];
+        return '/public/uploads/avatars/ '.$_SESSION['user']['avatar'];
     }
 
 //    public static function changeAvatar($avatar){

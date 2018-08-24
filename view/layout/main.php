@@ -33,7 +33,7 @@ use App\Auth;
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Hi, <?php echo Auth::getUsername(); ?> </a> <a href="/avatarupload?id=<?php echo Auth::getUserId(); ?>"><img src="/public/uploads/avatars/ <?php echo Auth::getUserAvatar(); ?>" style="max-width: 60px; border-radius: 89%;">
+                        <a class="navbar-brand" href="#">Hi, <?php echo Auth::getUsername(); ?> </a> <a href="/avatarupload?id=<?php echo Auth::getUserId(); ?>"><img src="<?php echo Auth::getUserAvatar(); ?>" style="max-width: 60px; border-radius: 89%;">
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,12 +55,12 @@ use App\Auth;
                             </div>
                     </div>
             </nav>
-            <div style="text-align: center;">
+           <div class = "main" style="text-align: center;">
                 <div class="alert" style="margin: auto;">
                     <?php
                     echo App\FlashMessage::getMessage();
                     ?>
-                </div>
+                </div> 
             <?php } ?>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

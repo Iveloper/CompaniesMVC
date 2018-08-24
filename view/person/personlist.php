@@ -55,7 +55,7 @@
             <td><?php echo $person['company']; ?></td>
 
             <td><a href="/personedit?id=<?php echo $person['id'] ?>"><button type="submit"  class="btn btn-warning">Edit</button></a></td>
-            <td><button type="submit" onclick="deleteCompany()" class="btn btn-danger"><a href="/persondelete?id=<?php echo $person['id'] ?>">Delete</a></button></td>
+            <td><button type="submit" onclick="deleteCompany(event)" class="btn btn-danger"><a href="/persondelete?id=<?php echo $person['id'] ?>">Delete</a></button></td>
         </tr>
     <?php } ?>
 </tbody>
