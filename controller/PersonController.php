@@ -5,7 +5,7 @@ namespace Controller;
 use App\Controller;
 use Model\PersonModel;
 use Model\CompanyModel;
-use App\PersonValidator;
+use App\Validator;
 use Exception;
 use App\FlashMessage;
 
@@ -52,7 +52,7 @@ class PersonController extends Controller {
     public function personsave() {
         try {
             if (isset($_POST)) {
-                $validationResult = PersonValidator::validate($_POST, $this->model->rules());
+                $validationResult = Validator::validate($_POST, $this->model->rules());
                 if (empty($validationResult)) {
                     $this->model->personSave($_POST);
                     header('Location: /personlist');

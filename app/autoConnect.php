@@ -7,7 +7,6 @@ require_once ROOT_DIR . '/app/Router.php';
 require_once ROOT_DIR . '/app/Auth.php';
 require_once ROOT_DIR . '/app/FlashMessage.php';
 require_once ROOT_DIR . '/app/Validator.php';
-require_once ROOT_DIR . '/app/PersonValidator.php';
 
 $paths = array('controller', 'model', 'view');
 
